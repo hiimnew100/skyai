@@ -1,0 +1,50 @@
+name: Service inquiry
+description: Request a quote for a small website repair or one-page site
+title: "[Service inquiry] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is public. Do not include passwords, personal data, payment details, private customer information, or access tokens. Only share a public website URL and a high-level scope.
+  - type: dropdown
+    id: service
+    attributes:
+      label: Service
+      options:
+        - $50 focused repair (up to three adjacent content blocks on one page)
+        - $100 responsive one-page website
+        - Not sure yet
+    validations:
+      required: true
+  - type: input
+    id: website
+    attributes:
+      label: Public website URL (optional)
+      placeholder: https://example.com
+    validations:
+      required: false
+  - type: textarea
+    id: scope
+    attributes:
+      label: What would you like changed or built?
+      description: Share the desired outcome and any public reference links. Do not paste private copy or credentials.
+      placeholder: Describe the goal, current behavior, and desired behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: materials
+    attributes:
+      label: What approved content or assets can you provide?
+      description: Only describe the materials here. Do not upload private or copyrighted content without permission.
+    validations:
+      required: true
+  - type: dropdown
+    id: timing
+    attributes:
+      label: Desired timing
+      options:
+        - Within 24 hours after scope and materials are agreed
+        - Flexible
+    validations:
+      required: true
