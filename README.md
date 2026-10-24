@@ -9,7 +9,7 @@ The delivery target is 24 hours after the approved content/assets and source or 
 
 ## Sample
 
-[Rota Pilates demo](pilates-demo/index.html) — a fictional studio concept, not a client project. The page is responsive and its form prepares a WhatsApp message locally; it does not send data automatically.
+[Open the live demo](https://raw.githack.com/hiimnew100/skyai/main/pilates-demo/index.html) · [View its source](pilates-demo/index.html) — a fictional studio concept, not a client project. Its form prepares a WhatsApp message locally and sends no data automatically.
 
 ## Request a quote
 
